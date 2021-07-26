@@ -17,9 +17,9 @@ source "${ZSH}/oh-my-zsh.sh"
 unalias rm # No interactive rm by default (brought by plugins/common-aliases)
 
 # Load rbenv if installed (to manage your Ruby versions)
-export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
+export PATH="/mnt/c/Windows/system32:${PATH}" # Needed for Linux/WSL
 type -a rbenv > /dev/null && eval "$(rbenv init -)"
-
+export PATH="${HOME}/.rbenv/bin:${PATH}" # Needed for Linux/WSL
 # Load pyenv (to manage your Python versions)
 export PATH="${HOME}/.pyenv/bin:${PATH}" # Needed for Linux/WSL
 export PYENV_VIRTUALENV_DISABLE_PROMPT=1 # https://github.com/pyenv/pyenv-virtualenv/issues/135
@@ -66,3 +66,5 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export BUNDLER_EDITOR=code
+
+export PYTHONPATH="/home/omar/code/omarbelhaj99/data-challenges/04-Decision-Science:$PYTHONPATH"
